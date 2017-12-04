@@ -6,14 +6,17 @@
 
     if(!isset($_GET["name"])){
         echo 'Error interno';
+        exit;
     }
 
     if(!isset($_GET["name"])){
         echo 'Error interno';
+        exit;
     }
 
     if(!isset($_GET["name"])){
-        echo 'Error interno';            
+        echo 'Error interno';
+        exit;           
     }
 
 $destinatario = "lcondori@gmail.com"; 
