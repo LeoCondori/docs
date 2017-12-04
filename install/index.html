@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Knowledge WordPress Documentation</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/skin-blue.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- All dynamic styles -->
+        <style type="text/css">
+            .social,.content-header .version, .steps > li,aside::after{
+          background: #72bf3b;
+        }
+        .main-header .sidebar-toggle::before,.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a,.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus{
+          color: #72bf3b        }
+        .nav.treeview-menu{
+            border-color:#72bf3b ;
+        }
+            .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{
+      background: #333333;
+    }
+ 
+  
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+              <style>
+            .xdocs-pre-loader{
+                background: url(assets/images/loader1.gif) center no-repeat #fff;
+            }
+        </style>
+
+          </head>
+  <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
+
+
+    
+    <div class="xdocs-pre-loader"></div>    <div class="wrapper">
+      <header class="main-header">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+      </header>
+      <!-- Left side column. contains the logo and sidebar --><aside class="main-sidebar">
+  <ul class='social'><li><a target='_blank' href='http://xvelopers.com' ><i class='fa fa-home'></i></a></li><li><a target='_blank' href='http://facebook.com/xvelopers' ><i class='fa fa-facebook'></i></a></li><li><a target='_blank' href='http://twitter.com/xvelopers' ><i class='fa fa-twitter'></i></a></li><li><a target='_blank' href='http://github.com' ><i class='fa fa-github'></i></a></li><li><a target='_blank' href='http://xvelopers.com' ><i class='fa fa-envelope'></i></a></li><li><a target='_blank' href='http://facebook.com/xvelopers' ><i class='fa fa-support'></i></a></li></ul>                <div class="logo">
+                  <img src="assets/images/logo-1.png" alt="" />
+              </div>
+        
+  <!-- sidebar: style can be found in sidebar.less -->
+  <div class="sidebar" id="scrollspy">
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="nav sidebar-menu">
+      <li class="active"><a href="#introduction">Introduction</a>
+
+                  
+                 
+                   <li class="treeview" id="scrollspy-components"><a href="#">Installing Theme</a>
+                  <ul class="nav treeview-menu"><li class=""><a href="#installing-theme-via-wordpress">Installing Theme Via WordPress</a><li class=""><a href="#installing-theme-via-ftp">Installing Theme Via FTP</a></ul>                </li>
+
+              
+              
+                             
+
+               <li class=""><a href="#required-or-recommended-plugins">Required or Recommended Plugins</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#import-demo-data">Import Demo Data</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#update-theme">Update Theme</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#how-to-setup-home-page">How to setup Home Page?</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#setup-permalinks-structure">Setup Permalinks Structure</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#posts-and-custom-post-types">Posts and Custom Post Types</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#manage-menu">Manage Menu</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#manage-widgets">Manage Widgets</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#how-to-setup-contact-form">How to Setup Contact Form?</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#theme-customizer-and-options">Theme Customizer and Options</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#knowledgebase-posts-types">Knowledgebase Posts Types</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#topics-on-front-page-archive">Topics on Front Page & Archive</a>
+
+                    
+              
+                             
+
+               <li class=""><a href="#knowledgebase-article-feedbacks">Knowledgebase Article Feedbacks</a>
+
+                    
+              
+            </ul>
+          </div>
+    </aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <div class="content body">
+
+
+         <!-- Introduction Section -->
+          <section id="introduction">
+            <div class='section-content'>
+              <div class="content-header">
+                <h1>Knowledge WordPress Documentation</h1>
+                              <div class="version"> Version 1.0.0</div>
+                       </div>
+              <div class="row">
+                <div class="col-sm-12">
+                   
+	        <img src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/screenshot.png" alt="">
+	                     </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                     <p>Thank you for purchasing our theme. We covered almost everything in this document that how easily you can setup your theme. If you have any questions that are beyond the scope of this help file, please feel free to use the free support forums.</p>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Introduction Section -->
+
+
+  <section id="installing-theme" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#installing-theme' class='header-link'><i class='fa fa-link'></i></a>Installing Theme</h2><p>To install theme first you must have a working WordPress site, make sure you follow the instructions step by step.If you have trouble installing WordPress read this tutorial.</p>
+<p>There are two ways to install theme.</p>
+<div class="alert alert-danger ">
+<p><strong>Style.css Missing Error</strong>If your getting error that style.css missing. Kindly upload theme using ftp.</p>
+</div>
+<div id='installing-theme-via-wordpress' class='step-content clearfix'><h3 class='steps-header'><a href='#installing-theme-via-wordpress'>Installing Theme Via WordPress</a></h3><p>Via WordPress – Log in into the admin area, navigate through <b>Appearance &gt; Themes &gt; Install Themes &gt; Upload</b> and select the .zip file you downloaded and finally click on Install Now</p>
+<div class="panel-group" id="collapse_9113-cd05"><div class="panel panel-default">    <div class="panel-heading" role="tab" id="heading_citem_d570-6cb3">        <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" aria-controls="heading_citem_d570-6cb3" data-parent="#collapse_9113-cd05" href="#citem_d570-6cb3">Collapsible Group Item 1</a>        </h4>    </div>    <div id="citem_d570-6cb3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading_citem_d570-6cb3">        <div class="panel-body">Collapse content goes here&#8230;.        </div>    </div></div><div class="panel panel-default">    <div class="panel-heading" role="tab" id="heading_citem_4bd7-e7e8">        <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" aria-controls="heading_citem_4bd7-e7e8" data-parent="#collapse_9113-cd05" href="#citem_4bd7-e7e8">Collapsible Group Item 2</a>        </h4>    </div>    <div id="citem_4bd7-e7e8" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading_citem_4bd7-e7e8">        <div class="panel-body">Collapse content goes here&#8230;.        </div>    </div></div><div class="panel panel-default">    <div class="panel-heading" role="tab" id="heading_citem_5837-9845">        <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" aria-controls="heading_citem_5837-9845" data-parent="#collapse_9113-cd05" href="#citem_5837-9845">Collapsible Group Item 3</a>        </h4>    </div>    <div id="citem_5837-9845" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading_citem_5837-9845">        <div class="panel-body">Collapse content goes here&#8230;.        </div>    </div></div></div>
+<p><div class="tab_wrap"><ul class="nav nav-tabs"><li class="active"><a data-toggle="tab" href="#bs_first_tab7">Tab title</a></li><li class="dropdown"><a class="" id="bs_dropdown7" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a><ul class="dropdown-menu"><li class=""><a data-toggle="tab" href="#bs_dropdown17">@fat</a></li><li class=""><a data-toggle="tab" href="#bs_dropdown27">@mdo</a></li></ul></li></ul><div class="tab-content"><div class="tab-pane fade active in" id=bs_first_tab7>Raw denim you probably haven&#8217;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div><div class="tab-pane fade " id=bs_dropdown17>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone.</div><div class="tab-pane fade " id=bs_dropdown27>Raw denim you probably haven&#8217;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</div></div></div><div class="well well-lg">This well needs your attention.</div></p>
+<div class="lead">This is a lead text and needs your attention.</div>
+<div class="row"><div class="col-sm-3">Text</div><div class="col-sm-3">Text</div><div class="col-sm-3">Text</div><div class="col-sm-3">Text</div></div>
+<a class="btn btn-md btn-info" href=""></a>
+<p><a href="#" data-toggle="tooltip" title="" data-placement="top" data-trigger="hover"></a><div class="alert alert-success alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Your content here.</div></p>
+</div><div id='installing-theme-via-ftp' class='step-content clearfix'><h3 class='steps-header'><a href='#installing-theme-via-ftp'>Installing Theme Via FTP</a></h3><p>Via FTP – The other way is by FTP, log in into your site’s FTP through a FTP Client and go into the WordPress installation directory and then navigate to: /wp-content/themes/ and upload the silicon folder here. After the uplad is complete go to <b>Appearance &gt; Themes</b> into your admin area, you will see theme there, hit Activate to activate currently installed theme<br />
+<a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2.png"><img class="size-full wp-image-124 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2.png" alt="2" width="1280" height="898" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2.png 1280w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2-300x210.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2-1024x718.png 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/2-600x421.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+</div></div>  </section>
+
+  <section id="required-or-recommended-plugins" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#required-or-recommended-plugins' class='header-link'><i class='fa fa-link'></i></a>Required or Recommended Plugins</h2><p>After theme activation you may see notice like this.<a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32.png"><img class="size-full wp-image-156 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32.png" alt="32" width="1052" height="98" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32.png 1052w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32-300x28.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32-1024x95.png 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32-600x56.png 600w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/32-1038x98.png 1038w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a>Click at ‘Begin installing Plugins’</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33.jpg"><img class="size-full wp-image-188 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33.jpg" alt="33" width="1260" height="765" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33.jpg 1260w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33-300x182.jpg 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33-1024x622.jpg 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/33-600x364.jpg 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a>On next screen you will see.</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1.jpg"><img class="size-full wp-image-189 alignleft" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1.jpg" alt="Untitled-1" width="1077" height="453" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1.jpg 1077w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1-300x126.jpg 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1-1024x431.jpg 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-1-600x252.jpg 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a>Lets verify that all plugins are installed and activated. Kindly reinstall or reactivated a plugin if it fails to download.</p>
+<p><img class="size-full wp-image-190 alignleft" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-2.jpg" alt="Untitled-2" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-2.jpg 1251w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-2-300x67.jpg 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-2-1024x229.jpg 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/11/Untitled-2-600x134.jpg 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+</div>  </section>
+
+  <section id="import-demo-data" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#import-demo-data' class='header-link'><i class='fa fa-link'></i></a>Import Demo Data</h2><p>After installing theme you have to configure theme and fill in demo content (importing data and theme options code).</p>
+<h2>1 Click Import</h2>
+<p>Please check following screenshot to import data quickly with 1 click. Before you begin please make sure all required and recommended plugins are installed and activated.</p>
+<p>If you unable to find Import option please make sure &#8220;One Click Demo Import&#8221; plugin install and activated.</p>
+<p><img class="size-full wp-image-286 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/import.png" alt="import" width="1263" height="458" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/import.png 1263w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/import-300x109.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/import-768x278.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/import-1024x371.png 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+<p>&nbsp;</p>
+<h2>Manual Import</h2>
+<p>Log in into the admin area, navigate through <b>Tools &gt; Import &gt; WordPress</b> and install WP-importer plugin, if you don’t have it. Choose <b>demo-data.xml</b> file from your theme package and click <b>Upload</b>. Don’t forget to check “Upload attachment files”!</p>
+<p>You can find all demo data files in &#8220;theme-name/inc/demo-data&#8221;</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/35.png"><img class="size-full wp-image-160 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/35.png" alt="35" width="907" height="574" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/35.png 907w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/35-300x190.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/35-600x380.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="update-theme" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#update-theme' class='header-link'><i class='fa fa-link'></i></a>Update Theme</h2><p>There are two methods to update your theme<br />
+1:- Using Envato Took Kit<br />
+2:- Using FTP</p>
+<h2>Using Envato Took Kit</h2>
+<p>This is the easist way to update your theme any time. You need an API key for this. Kindly check following screenshot and generate an API key.</p>
+<p><img class="aligncenter size-full wp-image-175" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key.png" alt="generate-envato-api-key" width="1044" height="576" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key.png 1044w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key-300x166.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key-1024x565.png 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key-600x331.png 600w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/generate-envato-api-key-672x372.png 672w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+<p>Kindly install and activate Envato WordPress Toolkit. Its already included in theme. And now open tool kit page. Enter your envato username and API key and save settings.Its recommended to make a backup for old files.</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/add-your-api-key.png"><img class="aligncenter size-full wp-image-176" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/add-your-api-key.png" alt="add-your-api-key" width="997" height="564" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/add-your-api-key.png 997w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/add-your-api-key-300x170.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/add-your-api-key-600x339.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+<p>After saving settings you will see list of themes you have downloaded and it will also show you update notifications.</p>
+<hr />
+<p>&nbsp;</p>
+<h2>Using FTP</h2>
+<p>Using FTP you can upload new files and replace with old folder. (Make a backup for old files before replace)</p>
+<p>&nbsp;</p>
+<h2>Plugin Update ( Important)</h2>
+<hr />
+<p>After updating theme you may also see a notification to update require or recommended pluginds. You must need to update plugins. Because most of the code is included in plugins which are essential for theme to work properly.</p>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="how-to-setup-home-page" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#how-to-setup-home-page' class='header-link'><i class='fa fa-link'></i></a>How to setup Home Page?</h2><h2>Step1</h2>
+<p>In following screenshots you will  see  how to create default home page.</p>
+<h3>Setup Default Home Page</h3>
+<p>First of all we need to create a a page with “Home Page” Template Please follow sub steps as shown in screenshot.</p>
+<p><img class="aligncenter size-full wp-image-287" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/home.png" alt="home" width="1263" height="603" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/home.png 1263w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/home-300x143.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/home-768x367.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/home-1024x489.png 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+<h2>Step2</h2>
+<p>To setup home page click at “Settings &gt; Reading” in your dashboard. Under “Front page displays” clcik at “A static page (select below)” and select “Home” from dorpdown as “Front page” and for “Posts page” select any of blog template of your choice. As you can see in following screenshot</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/8.png"><img class="aligncenter size-full wp-image-130" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/8.png" alt="8" width="966" height="764" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/8.png 966w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/8-300x237.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/8-600x475.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="setup-permalinks-structure" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#setup-permalinks-structure' class='header-link'><i class='fa fa-link'></i></a>Setup Permalinks Structure</h2><p>We request you to setup permalinks structure to avoid 404 errors. And if your 404 page is also not displaying you must have to setup permalinks to fix it according to following screenshot.</p>
+<p><a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5.png"><img class="size-full wp-image-127 alignleft" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5.png" alt="5" width="1258" height="798" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5.png 1258w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5-300x190.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5-1024x650.png 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/5-600x381.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+</div>  </section>
+
+  <section id="posts-and-custom-post-types" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#posts-and-custom-post-types' class='header-link'><i class='fa fa-link'></i></a>Posts and Custom Post Types</h2><h2>Add New Post</h2>
+<ul>
+<li>Click the Posts tab.</li>
+<li>Click the Add New Sub Tab.</li>
+<li>Start filling in the blanks. You can Use our Shortcodes!</li>
+<li>As needed, select a category, add tags, and make other selections from the sections below the post. Each of these sections is explained below.</li>
+<li>When you are ready, click Publish.</li>
+</ul>
+<hr />
+<h2>Custom Post Types</h2>
+<p>All custom post types work same as default WordPress posts/pages. Just select a post type and Add New Post:</p>
+<ul>
+<li>Click the Posts tab</li>
+<li>Click the Add New Sub Tab</li>
+<li>Start filling in the blanks.</li>
+<li>As needed, select a category, add tags, and make other selections from the sections below the post.</li>
+<li>When you are ready, click Publish.</li>
+</ul>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="manage-menu" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#manage-menu' class='header-link'><i class='fa fa-link'></i></a>Manage Menu</h2><h2>Simple Menu</h2>
+<p>Default menu uses WordPress menu structure. Its easy to setup. You need to follow step as shown in below screenshot.<br />
+<a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1.jpg"><img class="size-full wp-image-218 alignleft" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1.jpg" alt="Untitled-1" width="1169" height="866" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1.jpg 1169w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1-300x222.jpg 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1-1024x759.jpg 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/12/Untitled-1-600x444.jpg 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+</div>  </section>
+
+  <section id="manage-widgets" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#manage-widgets' class='header-link'><i class='fa fa-link'></i></a>Manage Widgets</h2><p>Setup WordPress Default Widgets</p>
+<ul>
+<li>Click Appearance tab.</li>
+<li>Click Widgets Sub Tab.</li>
+<li>There you can find different sidebars for footer part.</li>
+<li>Drag and Drop any widget you like in the appropriate sidebar.<a href="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/20.png"><img class="aligncenter size-full wp-image-142" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/20.png" alt="20" width="1011" height="759" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/20.png 1011w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/20-300x225.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2015/10/20-600x450.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></li>
+</ul>
+</div>  </section>
+
+  <section id="how-to-setup-contact-form" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#how-to-setup-contact-form' class='header-link'><i class='fa fa-link'></i></a>How to Setup Contact Form?</h2><p>Contact form is builtin in theme. You just need to add element or select contact form template from already made presets.<br />
+Don&#8217;t forget to add receiver email address where you want to receive emails. Edit contact form element to add your email address.<br />
+<img class="size-full wp-image-251 alignnone" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact.png" alt="contact" width="1330" height="591" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact.png 1330w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact-300x133.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact-768x341.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact-1024x455.png 1024w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/02/contact-600x267.png 600w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+<p>If you need to add more form fields then you can use contact form 7 plugin.</p>
+</div>  </section>
+
+  <section id="theme-customizer-and-options" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#theme-customizer-and-options' class='header-link'><i class='fa fa-link'></i></a>Theme Customizer and Options</h2><p>Unlike other themes this theme is using WordPress default customizer to make things simpler.</p>
+<p><strong>Go  to Appearance &gt; Customize</strong></p>
+<p>(or)</p>
+<p>Open any page you want to edit at front end. Click on &#8220;Customize&#8221; and that is it you will able to something like this.</p>
+<p><img class="aligncenter size-full wp-image-288" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/customize.png" alt="customize" width="1280" height="869" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/customize.png 1280w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/customize-300x204.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/customize-768x521.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/customize-1024x695.png 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+</div>  </section>
+
+  <section id="knowledgebase-posts-types" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#knowledgebase-posts-types' class='header-link'><i class='fa fa-link'></i></a>Knowledgebase Posts Types</h2><h2>Step 1</h2>
+<hr />
+<p>Please make sure that &#8220;Knowledgebase Essential&#8221; plugin install and activated.</p>
+<p>&nbsp;</p>
+<h2>Step 2</h2>
+<hr />
+<p>Create some Knowleagebase categories.</p>
+<h2><img class="aligncenter size-full wp-image-289" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k1.png" alt="k1" width="1263" height="676" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k1.png 1263w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k1-300x161.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k1-768x411.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k1-1024x548.png 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></h2>
+<h2>Step 3</h2>
+<hr />
+<p>Add some knowledgebase posts. It works same as simple blog posts.</p>
+<ul>
+<li>Click the Knowledgebase tab.</li>
+<li>Click the Add New Sub Tab.</li>
+<li>Start filling in the blanks. You can Use our Shortcodes!</li>
+<li>As needed, select a category, add tags.</li>
+<li>When you are ready, click Publish.</li>
+</ul>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="topics-on-front-page-archive" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#topics-on-front-page-archive' class='header-link'><i class='fa fa-link'></i></a>Topics on Front Page & Archive</h2><p>You can display knowledgebase topics on frontpage as you want. You can select one or multiple categories. And you can also change order if you want.</p>
+<p>To add topic list on front page</p>
+<p>Open front page in customizer</p>
+<p>Go to <strong>layouts &gt; Front Page</strong> and select categories</p>
+<p>and for archive please check <strong>layouts &gt; knowledgebase Archive</strong></p>
+<p><img class="aligncenter size-full wp-image-290" src="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k2.png" alt="k2" width="1179" height="703" srcset="http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k2.png 1179w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k2-300x179.png 300w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k2-768x458.png 768w, http://xvelopers.com/wp/themes/docs/wp-content/uploads/sites/24/2016/06/k2-1024x611.png 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+<p>&nbsp;</p>
+<p>If you are unable to select from list. Please make sure you have some posts and categories under knowledgebase post type.</p>
+<p>&nbsp;</p>
+</div>  </section>
+
+  <section id="knowledgebase-article-feedbacks" class="stickem-container">
+  <div class='section-content'><h2 class='page-header'><a href='#knowledgebase-article-feedbacks' class='header-link'><i class='fa fa-link'></i></a>Knowledgebase Article Feedbacks</h2><p>Knowledgebase Essential also have a feedback module. Feedback can be posted by users / visitors without any extra information. All feedback will be available in &#8220;Feedback&#8221; post type. You can manually remove feedbacks like any other post type.</p>
+</div>  </section>
+
+    </div><!-- /.content -->
+</div><!-- /.content-wrapper -->
+      
+
+  <footer class="main-footer">
+
+      <div class="pull-right hidden-xs">
+                        <div class="version"> Version 1.0.0</div>
+               </div>
+
+    <div class="copyrights">Copyright © 2016 XDOCS. All rights reserved.</div>  </footer>
+
+
+</div><!-- ./wrapper -->
+
+
+    <script type="text/javascript" src="assets/js/jQuery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.stickem.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/docs.js"></script>
+    </body>
+</html>
